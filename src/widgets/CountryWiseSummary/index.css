@@ -1,0 +1,32 @@
+.country_wise_container {
+  margin: 30px;
+  padding: 30px;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+.country_wise_heading {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.country_wise_table {
+  width: 100%;
+}
+
+.country_wise_row_head {
+  text-align: left;
+  padding: 5px 8px;
+}
+
+.country_wise_filter {
+  position: relative;
+}
+
+.country_wise_value {
+  padding: 5px 8px;
+}
+.text_right {
+  text-align: right;
+}

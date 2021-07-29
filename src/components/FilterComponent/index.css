@@ -1,0 +1,39 @@
+.filter_key {
+  cursor: pointer;
+}
+.filter_modal {
+  position: absolute;
+  width: 300px;
+  height: 500px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: left;
+}
+.filter_close {
+  position: absolute;
+  right: 30px;
+  top: 10px;
+  cursor: pointer;
+}
+.filter_labels {
+  padding: 10px;
+  height: 480px;
+  overflow: auto;
+}
+.filter_label {
+  margin: 5px;
+}
+
+.filter_apply {
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+}
+.filter_left {
+  left: 10%;
+}
+.filter_right {
+  right: 10%;
+}
