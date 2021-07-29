@@ -57,8 +57,17 @@ export default function FilterComponent(props) {
                       ).includes(value)}
                       onChangeCapture={(event) => {
                         event.stopPropagation();
-
-                        setTempAppliedFilters([...tempAppliedFilters, value]);
+                        const {
+                          target: { checked },
+                        } = event;
+                        if (checked && !tempAppliedFilters.includes(value)) {
+                          setTempAppliedFilters([...tempAppliedFilters, value]);
+                        }
+                        if (!checked && tempAppliedFilters.includes(value)) {
+                          setTempAppliedFilters([
+                            ...tempAppliedFilters.filter((v) => v !== value),
+                          ]);
+                        }
                       }}
                       className="filter_input"
                     />
@@ -72,6 +81,7 @@ export default function FilterComponent(props) {
             onClick={(event) => {
               event.stopPropagation();
               onFilterApply(filterKey, tempAppliedFilters);
+              setIsFilterOpen(false);
             }}
             className="filter_apply"
           >

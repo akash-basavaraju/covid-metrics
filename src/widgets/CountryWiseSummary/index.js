@@ -67,7 +67,7 @@ export default function CountryWiseSummary(props) {
         const { [appliedFilterKeys[i]]: filterValues } = appliedFilters;
         const { [appliedFilterKeys[i]]: presentValue } = countrObj;
 
-        if (!filterValues.includes(presentValue)) {
+        if (filterValues.length > 0 && !filterValues.includes(presentValue)) {
           flag = false;
         }
       }
