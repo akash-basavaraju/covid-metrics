@@ -82,7 +82,7 @@ export default function CountryWiseSummary(props) {
         [filterKey]: updatedFilterValues,
       });
     },
-    [availableFilterValues, appliedFilters]
+    [appliedFilters]
   );
 
   return (
