@@ -10,7 +10,7 @@ Shows the Country Wise Metric Values in a table.
 
 Sort and Filter can be applied to the table.
 
-Clicking on the Column Name applies the Sort.
+Clicking on the Column Name applies the Sort, Clicking again applies sort in reverse order.
 
 Clicking on "Filter" show the filter modal to apply filter.
 
